@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de registro creado con HTML puro para practicar listas, tablas, citas y formularios.">
+    <meta name="author" content="Estudiante Tech Campus">
+
+    <title>Registro Tech Campus</title>
+
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header id="inicio">
+
+        <img 
+            src="assets/images/campus-logo.svg" 
+            alt="Logo de Tech Campus" 
+            width="90"
+        >
+
+        <h1> <p style="color:red;">Registro Tech Campus</p></h1>
+
+        <p>
+            La siguiente tabla resume la distribucion de la sesion practica
+        </p>
+
+        <nav aria-label="Navegación principal">
+            <a href="#programa">Programa</a>
+            <a href="#horario">Horario</a>
+            <a href="#frase">Frase</a>
+            <a href="#registro">Registro</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- SECCIÓN PROGRAMA -->
+        <section id="programa">
+
+            <h2>Programa de aprendizaje</h2>
+
+            <p>
+                Este programa está diseñado para estudiantes que inician desde
+                cero y quieren aprender a construir páginas web paso a paso.
+            </p>
+
+            <hr>
+
+            <h3>¿Qué veremos en esta sesión?</h3>
+
+            <ul>
+                <li>Separadores para organizar el contenido.</li>
+                <li>Listas para mostrar ideas o pasos.</li>
+                <li>Tablas para presentar información ordenada.</li>
+                <li>Formularios para recolectar datos del usuario.</li>
+            </ul>
+
+            <h3>Pasos para participar</h3>
+
+            <ol>
+                <li>Leer la información del programa.</li>
+                <li>Revisar el horario disponible.</li>
+                <li>Completar el formulario de registro.</li>
+                <li>Confirmar los datos antes de enviar.</li>
+            </ol>
+
+        </section>
+
+        <hr>
+
+        <!-- TABLA -->
+        <section id="horario">
+
+            <h2>Horario sugerido</h2>
+
+            <p>
+                La siguiente tabla resume la distribución de la sesión práctica.
+            </p>
+
+            <table border="1">
+
+                <tr>
+                    <th>Momento</th>
+                    <th>Actividad</th>
+                    <th>Duración</th>
+                    <th>Fecha</th>
+                </tr>
+
+                <tr>
+                    <td>Inicio</td>
+                    <td>Explicación de listas, tablas y formularios</td>
+                    <td>30 minutos</td>
+                    <th>10/02/2025</th>
+                </tr>
+
+                <tr>
+                    <td>Práctica guiada</td>
+                    <td>Construcción de la página Registro Tech Campus</td>
+                    <td>90 minutos</td>
+                    <th>20/03/2025</th>
+                </tr>
+
+                <tr>
+                    <td>Descanso</td>
+                    <td>Pausa activa y preguntas rápidas</td>
+                    <td>15 minutos</td>
+                    <th>20/04/2025, 20/05/2025</th>
+                </tr>
+
+                <tr>
+                    <td>Cierre</td>
+                    <td>Revisión, preguntas y reto final</td>
+                    <td>30 minutos</td>
+                    <th>01/01/2026</th>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- CITA -->
+        <section id="frase">
+
+            <h2>Frase de inspiración</h2>
+
+            <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML">
+
+                <p>
+                    HTML es el lenguaje que estructura el contenido de la web.
+                </p>
+
+                <footer>
+                    Fuente: <cite>MDN Web Docs</cite>
+                </footer>
+
+            </blockquote>
+
+        </section>
+
+        <hr>
+
+        <!-- FORMULARIO -->
+        <section id="registro">
+
+            <h2>Formulario de registro</h2>
+
+            <p>
+                Completa tus datos para participar en la experiencia
+                Tech Campus.
+            </p>
+
+            <form action="#" method="post">
+
+                <!-- NOMBRE -->
+                <p>
+                    <label for="nombre">Nombre completo:</label><br>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ejemplo: Ana Pérez"
+                        required
+                    >
+                </p>
+
+                <!-- CORREO -->
+                <p>
+                    <label for="correo">Correo electrónico:</label><br>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="nombre@correo.com"
+                        required
+                    >
+                </p>
+
+                <!-- TELÉFONO -->
+                <p>
+                    <label for="telefono">Teléfono:</label><br>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="3001234567"
+                    >
+                </p>
+
+                <!-- SELECT -->
+                <p>
+                    <label for="programa-interes">
+                        Programa de interés:
+                    </label><br>
+
+                    <select 
+                        id="programa-interes" 
+                        name="programa_interes" 
+                        required
+                    >
+
+                        <option value="">
+                            Selecciona una opción
+                        </option>
+
+                        <option value="html-css">
+                            HTML y CSS
+                        </option>
+
+                        <option value="javascript">
+                            JavaScript básico
+                        </option>
+
+                        <option value="python">
+                            Python para principiantes
+                        </option>
+
+                        <option value="react">
+                            React y aplicaciones modernas
+                        </option>
+
+                    </select>
+                </p>
+
+                <!-- RADIO BUTTONS -->
+                <p>Modalidad preferida:</p>
+
+                <p>
+                    <input 
+                        type="radio" 
+                        id="presencial" 
+                        name="modalidad" 
+                        value="presencial"
+                    >
+
+                    <label for="presencial">
+                        Presencial
+                    </label>
+                </p>
+
+                <p>
+                    <input 
+                        type="radio" 
+                        id="virtual" 
+                        name="modalidad" 
+                        value="virtual"
+                    >
+
+                    <label for="virtual">
+                        Virtual
+                    </label>
+                </p>
+
+                <!-- CHECKBOX -->
+                <fieldset>
+
+                    <legend>Intereses del estudiante</legend>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="frontend"
+                            name="intereses"
+                            value="frontend"
+                        >
+
+                        <label for="frontend">
+                            Diseño de páginas web
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="formularios"
+                            name="intereses"
+                            value="formularios"
+                        >
+
+                        <label for="formularios">
+                            Formularios y recolección de datos
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="proyectos"
+                            name="intereses"
+                            value="proyectos"
+                        >
+
+                        <label for="proyectos">
+                            Crear proyectos reales
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="backend"
+                            name="intereses"
+                            value="backend"
+                        >
+
+                        <label for="backend">
+                            Desarrollo backend
+                        </label>
+                    </p>
+
+                </fieldset>
+
+                <!-- TEXTAREA -->
+                <p>
+
+                    <label for="comentarios">
+                        Comentarios:
+                    </label><br>
+
+                    <textarea
+                        id="comentarios"
+                        name="comentarios"
+                        rows="5"
+                        cols="40"
+                        placeholder="Cuéntanos qué esperas aprender..."
+                    ></textarea>
+
+                </p>
+
+                <!-- INPUT OCULTO -->
+                <input 
+                    type="hidden" 
+                    name="origen" 
+                    value="sesion-html-2"
+                >
+
+                <!-- BOTONES -->
+                <p>
+                    <button type="submit">
+                        Enviar registro
+                    </button>
+
+                    <button type="reset">
+                        Limpiar formulario
+                    </button>
+                </p>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+
+            <h2>Contacto</h2>
+
+            <p>
+                Si tienes dudas sobre el programa puedes escribirnos al correo:
+            </p>
+
+            <p>
+                contacto@techcampus.com
+            </p>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            © 2026 Tech Campus - Página creada para práctica de HTML.
+        </p>
+
+    </footer>
+
+</body>
+</html>
